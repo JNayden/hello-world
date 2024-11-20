@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Forum</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>My Forum</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/register">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Forum Topics -->
+    <section class="forum-topics">
+        <h2>Forum Topics</h2>
+
+        <!-- Example Topic -->
+        <div class="topic">
+            <div class="topic-info">
+                <a href="/topic/1"><h3>First Topic</h3></a>
+                <p>Started by: User1</p>
+                <p>Replies: 10 | Views: 100 | Last Post: 1 hour ago</p>
+            </div>
+        </div>
+
+        <!-- Example Topic -->
+        <div class="topic">
+            <div class="topic-info">
+                <a href="/topic/2"><h3>Second Topic</h3></a>
+                <p>Started by: User2</p>
+                <p>Replies: 5 | Views: 50 | Last Post: 2 hours ago</p>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <a href="?page=1">1</a>
+            <a href="?page=2">2</a>
+            <a href="?page=3">3</a>
+        </div>
+    </section>
+    <h1>User Analytics</h1>
+    <div class="user-analytics">
+        <p>User ID: {{ user_id }}</p>
+        <p>Posts Count: {{ posts_count }}</p>
+        <p>Likes Count: {{ likes_count }}</p>
+        <p>Reputation: {{ reputation }}</p>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Forum</p>
+    </footer>
+
+</body>
+</html>
